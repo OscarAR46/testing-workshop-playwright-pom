@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test": "playwright test --project chromium --headed",
-    "my_test": "playwright test tests/your_test.spec.ts --project chromium --headed"
+    "example_test": "playwright test tests/example.spec.ts --project chromium --headed",
+    "your_test": "playwright test tests/your_test.spec.ts --project chromium --headed"
   }
 }
