@@ -7,7 +7,7 @@ import WorkOutHolidayPage from "./pages/workOutHolidayPage";
 import DaysWorkedPerWeekPage from "./pages/daysWorkedPerWeekPage";
 import SummaryPage from "./pages/summaryPage";
 
-test(`Your test - Task 1`, async ({ page }): Promise<void> => {
+test(`Your test - Task 1 - flow diagram 2`, async ({ page }): Promise<void> => {
     // Complete your first test here!
     // You will need to edit IrregularHoursPage.ts to add a method for clicking the "Yes" button, and you will need to create a new page object for the "Leave Year Start" page.
 
@@ -56,7 +56,7 @@ test(`Your test - Task 1`, async ({ page }): Promise<void> => {
     await summaryPage.expectSummary('The statutory holiday entitlement is 16.8 days holiday.');
 })
 
-test(`Your test - Task 2`, async ({ page }): Promise<void> => {
+test(`Your test - Task 2 - flow diagram 3`, async ({ page }): Promise<void> => {
     // Complete your second test here!
      // Navigate to the landing page
     await page.goto('https://www.gov.uk/calculate-your-holiday-entitlement');
