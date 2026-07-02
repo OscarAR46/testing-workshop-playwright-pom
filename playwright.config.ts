@@ -68,14 +68,14 @@ module.exports = defineConfig({
         trace: "off",
       },
     },
-    {
-      name: "MicrosoftEdge",
-      use: {
-        ...devices["Desktop Edge"], // MS Edge desktop
-        channel: "msedge",
-        screenshot: "only-on-failure",
-        trace: "off",
-      },
-    },
+    // {
+    //   name: "MicrosoftEdge",
+    //   use: {
+    //     ...devices["Desktop Edge"], // MS Edge desktop
+    //     channel: "msedge",
+    //     screenshot: "only-on-failure",
+    //     trace: "off",
+    //   },
+    // },
   ],
 });
