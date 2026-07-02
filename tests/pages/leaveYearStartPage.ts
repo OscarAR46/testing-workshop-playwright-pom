@@ -4,7 +4,7 @@ import leaveYearStartPage_content from "../content/leaveYearStartPage_content";
 
 export class LeaveYearStartPage {
     private readonly page: Page;
-    private readonly titlePartial: string;
+    private readonly title: string;
     private readonly heading: string;
     private readonly day_input: Locator;
     private readonly month_input: Locator;
@@ -13,7 +13,7 @@ export class LeaveYearStartPage {
     
     constructor(page: Page) {
         this.page = page;
-        this.titlePartial = leaveYearStartPage_content.pageTitlePartial;
+        this.title = leaveYearStartPage_content.pageTitle;
         this.heading = leaveYearStartPage_content.heading;
         
         // Target date input elements safely by their visible text labels
@@ -25,7 +25,7 @@ export class LeaveYearStartPage {
     }
 
     async checkPageLoads(): Promise<void> {
-        await expect(this.page).toHaveTitle(new RegExp(this.titlePartial));
+        await expect(this.page).toHaveTitle(this.title);
         await expect(this.page.getByRole('heading', { name: this.heading })).toBeVisible();
         await expect(this.day_input).toBeVisible();
         await expect(this.month_input).toBeVisible();

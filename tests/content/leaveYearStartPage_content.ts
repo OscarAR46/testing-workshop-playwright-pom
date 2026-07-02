@@ -1,6 +1,6 @@
 const leaveYearStartPage_content = {
-    pageTitlePartial: "When does your leave year start? - Calculate your holiday entitlement - GOV.UK",
-    heading: "When does your leave year start? - Calculate your holiday entitlement - GOV.UK",
+    pageTitle: "When does the leave year start? - Calculate holiday entitlement - GOV.UK",
+    heading: "When does the leave year start?",
 };
 
 export default leaveYearStartPage_content;
